@@ -103,27 +103,10 @@ module.exports = async(client, message) => {
         commandCounter(cmd, message.member);
     }
 
-    //emojify
+    //emojify (Uncompleted)
     if(data.emojiSystem) {
         if(message.startsWith(':') && message.endsWith(':')) {
-            const emoji = await message.guild.emojis.cache.find(e => e.name == message)
-            if(!emoji?.animated) return;
-            try {
-                message.guild.fetchWebhooks().then(webhooks => {
-                    let webhook = webhooks?.find(w => w.channelId == message.channel.id);
-                    if(!webhook) channel.createWebhook('Gengis').then(w => webhook = w);
-                    console.log(webhook.id);
-                    const webhookClient = new WebhookClient({ url: webhook.url });
-                    message.delete();
-                    webhookClient.send({
-                        content: emoji.id,
-                        username: message.member.nickname,
-                        avatarURL: message.author.displayAvatarURL()
-                    })
-                })
-            } catch(error) {
-                console.log(error);
-            }
+            
         }
     }
 }
