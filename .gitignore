@@ -1,0 +1,7 @@
+#ignored files
+.env
+.vscode/
+commands/embed.js
+commands/test.js
+utils/AutoModerator.js
+resources/imagelinks.txt

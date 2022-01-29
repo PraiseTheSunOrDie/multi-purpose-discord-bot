@@ -1,0 +1,15 @@
+{
+    "prefix": "f!",
+    "testGuild": "901857227223220274",
+    "color": "#45009c",
+    "presence" : {
+        "status" : "online",
+        "activities" : [
+            {
+                "name" : "discord.gg/italia",
+                "type" : "WATCHING"
+            }
+        ]
+    },
+    "registerCommands": false
+}
