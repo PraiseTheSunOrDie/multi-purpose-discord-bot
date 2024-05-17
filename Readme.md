@@ -1,2 +1,2 @@
-# Fakepage Bot
-Uncompleted multi-purpose bot
+# Just a multi-purpose discord bot
+Every module is deprecated lul
